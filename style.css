@@ -10,34 +10,47 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(12, 12, 12);
-    gap: 50px;
-}
-
-#social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    background: 
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)),
+        url(imgs/morena.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 5%;
 }
 
 #social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     text-align: center;
+    font-size: 18px;
     color: whitesmoke;
+    transition: .4s;
+}
+
+#social img {
+    width: 35px;
+}
+
+#social a:hover {
+    color: rgb(211, 211, 211);
+    text-decoration: underline;
 }
 
 #title {
     font-family: 'young serif', serif;
-    
 }
 
 #title h1 {
     text-align: center;
+    font-size: 70px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
     color: red;
 }
 
@@ -48,6 +61,11 @@ body {
     width: 40%;
     text-align: center;
     color: whitesmoke;
+}
+
+#text p {
+    font-size: 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 #buttonCTA {
@@ -66,10 +84,52 @@ body {
     padding: 10px;
     text-transform: uppercase;
     gap: 10px;
+    transition: .4s;
+}
+
+#buttonCTA > a > i {
+    position: relative;
+    animation: arrowmove infinite alternate 1s;
+}
+
+#buttonCTA a:hover {
+    border-radius: 13px;
+    border-color: red;
+} 
+
+@keyframes arrowmove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 3px;
+    }
 }
 
 @media screen and (max-width:768px){
     body {
         background-color: red;
+        background: 
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)),
+        url(imgs/loira.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #title h1 {
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 10px 10px 1px solid rgba(0, 0, 0, 0.438); 
+        color: rgb(255, 0, 0);
+    }
+
+    #text {
+        width: 78%;
+    }
+
+    #buttonCTA a {
+        color: white;
     }
 }
