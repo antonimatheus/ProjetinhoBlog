@@ -50,7 +50,7 @@ body {
 #title h1 {
     text-align: center;
     font-size: 70px;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     color: red;
 }
 
@@ -79,23 +79,24 @@ body {
     flex-direction: row;
     text-align: center;
     text-decoration: none;
-    color: whitesmoke;
-    border: 1px solid white;
-    padding: 10px;
     text-transform: uppercase;
+    padding: 10px;
+    border: 1px solid rgb(255, 0, 0);
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.1);
     gap: 10px;
     transition: .4s;
 }
 
 #buttonCTA > a > i {
     position: relative;
-    animation: arrowmove infinite alternate 1s;
+    animation: arrowmove infinite alternate .4s;
 }
 
 #buttonCTA a:hover {
     border-radius: 13px;
-    border-color: red;
-} 
+    border-color: white;
+}
 
 @keyframes arrowmove {
     from {
@@ -103,7 +104,7 @@ body {
     }
 
     to {
-        left: 3px;
+        left: 4px;
     }
 }
 
@@ -122,7 +123,6 @@ body {
         text-align: center;
         font-size: 50px;
         text-shadow: 10px 10px 1px solid rgba(0, 0, 0, 0.4); 
-        color: rgb(255, 0, 0);
     }
 
     #text {
