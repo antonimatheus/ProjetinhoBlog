@@ -109,7 +109,8 @@ body {
 }
 
 @media screen and (max-width:768px){
-    body {
+    /*
+    /body {
         background-color: red;
         background: 
         linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)),
@@ -118,6 +119,7 @@ body {
         background-repeat: no-repeat;
         background-position: center;
     }
+    */
 
     #title h1 {
         text-align: center;
