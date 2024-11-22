@@ -70,8 +70,10 @@ body {
 
 #buttonCTA {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 #buttonCTA a {
@@ -80,7 +82,7 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 13px;
     border: 1px solid rgb(255, 0, 0);
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.1);
@@ -98,6 +100,11 @@ body {
     border-color: white;
 }
 
+#buttonCTA #aviso {
+    font-size: 10px;
+    color: rgba(255, 255, 0, 0.5);
+}
+
 @keyframes arrowmove {
     from {
         left: 0px;
@@ -109,8 +116,8 @@ body {
 }
 
 @media screen and (max-width:768px){
-    /*
-    /body {
+    
+    body {
         background-color: red;
         background: 
         linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)),
@@ -119,8 +126,7 @@ body {
         background-repeat: no-repeat;
         background-position: center;
     }
-    */
-
+    
     #title h1 {
         text-align: center;
         font-size: 50px;
