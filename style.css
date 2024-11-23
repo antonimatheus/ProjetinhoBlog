@@ -83,7 +83,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     padding: 13px;
-    border: 1px solid rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.1);
     gap: 10px;
