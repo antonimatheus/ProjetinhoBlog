@@ -58,7 +58,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 50%;
     text-align: center;
     color: whitesmoke;
 }
@@ -83,9 +83,10 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     padding: 13px;
-    border: 2px solid rgb(255, 0, 0);
+    border: 2px solid rgb(78, 1, 1);
+    border-radius: 5px;
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: red;
     gap: 10px;
     transition: .4s;
 }
@@ -103,6 +104,42 @@ body {
 #buttonCTA #aviso {
     font-size: 10px;
     color: rgba(255, 255, 0, 0.5);
+}
+
+#imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 250px;
+    gap: 7vw;
+    overflow: hidden; /* Evita que qualquer conteúdo extra passe da div */
+    position: relative;
+}
+
+.foto-container {
+    position: relative;
+    width: 25vw;
+    max-height: 250px;
+    cursor: pointer;
+}
+
+.modelo {
+    width: 100%; /* A imagem preenche a largura do contêiner */
+    height: 100%; /* A imagem preenche a altura do contêiner */
+    border-radius: 10px;
+    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente para preencher */
+    filter: blur(2px);
+}
+
+.cadeado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; /* Ajuste o tamanho do cadeado conforme necessário */
+    z-index: 2;
 }
 
 @keyframes arrowmove {
@@ -125,7 +162,7 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-    }*/
+    }
     
     #title h1 {
         text-align: center;
