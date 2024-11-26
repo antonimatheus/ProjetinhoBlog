@@ -68,6 +68,64 @@ body {
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
+#imgsBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+#imgsBlock p {
+    color: rgb(115, 115, 115);
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 250px;
+    gap: 7vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.foto-container {
+    position: relative;
+    width: 27vw;
+    max-height: 250px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.modelo {
+    width: 100%; /* Preenche toda a largura do contêiner */
+    height: 100%; /* Preenche toda a altura do contêiner */
+    object-fit: cover; /* Garante que a imagem preencha proporcionalmente o espaço */
+    object-position: center; /* Centraliza o foco no meio da imagem */
+    border-radius: 10px;
+    filter: blur(2px);
+}
+
+.cadeado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; /* Ajusta o tamanho do cadeado conforme necessário */
+    z-index: 2;
+    pointer-events: none; /* O clique não afeta o cadeado, apenas o link da imagem */
+}
+
 #buttonCTA {
     display: flex;
     flex-direction: column;
@@ -82,7 +140,7 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 13px;
+    padding: 18px;
     border: 2px solid rgb(78, 1, 1);
     border-radius: 5px;
     color: whitesmoke;
@@ -104,42 +162,6 @@ body {
 #buttonCTA #aviso {
     font-size: 10px;
     color: rgba(255, 255, 0, 0.5);
-}
-
-#imgs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-height: 250px;
-    gap: 7vw;
-    overflow: hidden; /* Evita que qualquer conteúdo extra passe da div */
-    position: relative;
-}
-
-.foto-container {
-    position: relative;
-    width: 25vw;
-    max-height: 250px;
-    cursor: pointer;
-}
-
-.modelo {
-    width: 100%; /* A imagem preenche a largura do contêiner */
-    height: 100%; /* A imagem preenche a altura do contêiner */
-    border-radius: 10px;
-    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente para preencher */
-    filter: blur(2px);
-}
-
-.cadeado {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50px; /* Ajuste o tamanho do cadeado conforme necessário */
-    z-index: 2;
 }
 
 @keyframes arrowmove {
@@ -176,5 +198,5 @@ body {
 
     #buttonCTA a {
         color: white;
-    }
+    }*/
 }
