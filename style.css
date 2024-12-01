@@ -90,14 +90,14 @@ body {
     align-items: center;
     width: 100%;
     max-height: 250px;
-    gap: 7vw;
     overflow: hidden;
     position: relative;
+    gap: 3vw;
 }
 
 .foto-container {
     position: relative;
-    width: 27vw;
+    width: 30vw;
     max-height: 250px;
     cursor: pointer;
     display: flex;
@@ -121,7 +121,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50px; /* Ajusta o tamanho do cadeado conforme necessário */
+    width: 40px; /* Ajusta o tamanho do cadeado conforme necessário */
     z-index: 2;
     pointer-events: none; /* O clique não afeta o cadeado, apenas o link da imagem */
 }
