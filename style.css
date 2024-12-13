@@ -15,7 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(12, 12, 12);
     background: 
-        linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)),
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),
         url(imgs/morena.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,7 +76,7 @@ body {
     gap: 3%;
 }
 
-#imgsBlock p {
+#cliqueParaDesbloquear a {
     color: rgb(115, 115, 115);
     font-size: 1.2rem;
     text-align: center;
@@ -93,6 +93,15 @@ body {
     overflow: hidden;
     position: relative;
     gap: 3vw;
+}
+
+.imgs--div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 5px;
 }
 
 .foto-container {
@@ -124,6 +133,21 @@ body {
     width: 40px; /* Ajusta o tamanho do cadeado conforme necessário */
     z-index: 2;
     pointer-events: none; /* O clique não afeta o cadeado, apenas o link da imagem */
+}
+
+.star--active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 3px;
+}
+
+.star--active i {
+    font-size: 12px;
+    color: yellow;
 }
 
 #buttonCTA {
