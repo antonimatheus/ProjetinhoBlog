@@ -80,7 +80,7 @@ body {
     color: rgb(115, 115, 115);
     font-size: 1.2rem;
     text-align: center;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 #imgs {
@@ -122,7 +122,7 @@ body {
     object-fit: cover; /* Garante que a imagem preencha proporcionalmente o espaço */
     object-position: center; /* Centraliza o foco no meio da imagem */
     border-radius: 10px;
-    filter: blur(1px);
+    filter: blur(1.3px);
 }
 
 .cadeado {
