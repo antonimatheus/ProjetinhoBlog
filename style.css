@@ -122,7 +122,7 @@ body {
     object-fit: cover; /* Garante que a imagem preencha proporcionalmente o espaço */
     object-position: center; /* Centraliza o foco no meio da imagem */
     border-radius: 10px;
-    filter: blur(1.2px);
+    filter: blur(1.1px);
 }
 
 .cadeado {
