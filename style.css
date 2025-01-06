@@ -20,7 +20,28 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    gap: 5%;
+    gap: 4%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 95%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+}
+
+#flag {
+    width: 25px;
 }
 
 #social a {
