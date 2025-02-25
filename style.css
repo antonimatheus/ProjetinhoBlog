@@ -143,7 +143,7 @@ nav {
     object-fit: cover; /* Garante que a imagem preencha proporcionalmente o espaço */
     object-position: center; /* Centraliza o foco no meio da imagem */
     border-radius: 10px;
-    filter: blur(1.5px);
+    filter: blur(2px);
 }
 
 .cadeado {
